@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 <style>
     *{margin: 0;padding: 0;}
     a{text-decoration: none;color: #fff;}
     ul{list-style: none;}
-    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(video/porscheVV.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
+    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(video/web2.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
     header .menu{width: 90%;display: flex;justify-content: space-between;color: #fff;margin:0 auto;padding-top: 30px;}
     header .menu a img{filter: invert();width: 24px;height: 24px;vertical-align: middle;}
-    header .menu p{font-size: 50px;}
+    header .menu p{font-size: 50px;font-family: Orbitron;}
     header .txt{line-height: 120px;position: absolute;bottom: 10%;left: 10%;}
     header .txt h1{color: #fff;font-size: 120px;font-weight: normal;}
     header .txt a{font-size: 16px;color: #fff;border: 1px solid #fff;padding: 15px 25px;border-radius: 5px;}
@@ -83,6 +83,7 @@
 
     footer{width: 100%; max-width: 1857px;height: 1300px;background: #000;color: #fff;padding-top: 100px;}
     .foot{width: 80%;margin-left: 60px;}
+    .area h3{margin-bottom: 20px;}
     footer .area img{width: 30px;height: 30px;}
     footer .area .country{display: flex; gap: 20px; margin-bottom: 50px;font-size: 16px;}
     footer .news{width: 90%;margin-bottom: 100px;}
@@ -96,15 +97,17 @@
     footer .news>ul>li ul li:nth-child(9){background: none;}
     footer .news>ul>li ul li:nth-child(10){background: none;}
     
-    footer .about{margin-bottom: 150px;}
+    footer .about{margin-bottom: 200px;position: relative;}
+    footer .about::after{content: "";width: 1700px;height: 1px;background: #ddd;position: absolute;bottom: -100px;left: 0;}
     footer .about h3{margin-bottom: 20px;}
     footer .about ul{display: flex;gap: 150px;}
     footer .about ul{line-height: 30px;}
     
     footer .last .link ul{display: flex;gap: 10px;}
     footer .last .link ul li{position: relative;}
-    footer .last .link ul li:after{content: "";position: absolute;width: 1px;height: 12px;top: 0;left: 0;background: #fff;}
-    
+    footer .last .link ul li:after{content: "";position: absolute;width: 1px;height: 12px;top: 7px;left: -5px;background: #fff;}
+    footer .last .link ul li:first-child::after{display: none;}
+    footer>h1{font-size: 50px;margin: 0 auto;text-align: center;margin-top: 50px;font-weight: normal;font-family: Orbitron;}
     
 
 </style>
@@ -119,8 +122,8 @@
     
 </div>
  <div class="txt">
-     <h1>Two icons. <br>One designer.</h1>
-     <a href="#">시계 속의 911을 만나보세요</a>
+     <h1>포르쉐 최초 한<br>국 에디션</h1>
+     <a href="#">자세히 알아보기</a>
  </div>
 </header>
 <main>
@@ -199,7 +202,7 @@
 
     </ul>
 </div>
-    </div>
+    
 
     <div class="find">
         <div>
@@ -359,7 +362,10 @@
                ※ 기재된 수치는 통제된 상황에서 얻을 수 있는 최고 수치로서 환경 및 운전 상황에 따라 달라질 수 있습니다.<br>
             </p>
         </div>
-    </div>
+    </div>  
+    <h1>Porsche</h1>
    </footer>
+ 
+</div>
 </body>
 </html>
