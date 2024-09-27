@@ -3,13 +3,24 @@
 *{margin: 0;padding: 0;}
     a{text-decoration: none;color: #fff;}
     ul{list-style: none;}
-    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(../video/web2.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
+    header{width: 100%;max-width: 1857px;height: 100vh;background-image: url(../video/red.webp);background-repeat: no-repeat;background-size: cover;position: relative;margin: 0 auto;}
     header .menu{width: 90%;display: flex;justify-content: space-between;color: #fff;margin:0 auto;padding-top: 30px;}
     header .menu a img{filter: invert();width: 24px;height: 24px;vertical-align: middle;}
     header .menu p{font-size: 50px;font-family: Orbitron;}
     header .txt{line-height: 120px;position: absolute;bottom: 10%;left: 10%;}
     header .txt h1{color: #fff;font-size: 120px;font-weight: normal;}
     header .txt a{font-size: 16px;color: #fff;border: 1px solid #fff;padding: 15px 25px;border-radius: 5px;}
+
+    .mainmenu{width: 1207px;position: absolute;top: 0;left: 0;z-index:999;display: flex;justify-content: center;flex-wrap: nowrap;}
+    .mainmenu ul{flex: 1 1 40%;}
+    .mainmenu ul:first-child{background: #FFF;} 
+    .mainmenu ul:first-child li:first-child{margin-top: 100px;}
+    .mainmenu ul:first-child li{font-size: 22px;} 
+    .mainmenu ul:first-child li:hover{background: #ccc;border-radius: 10px;}
+    .mainmenu ul:first-child >li a{width: 100%;color: #000;display: flex;justify-content: space-between;}
+    .mainmenu ul:nth-child(2){background: #eeeff2;}
+    .mainmenu ul:nth-child(2) li{margin: 0 auto;text-align: center;}
+    .mainmenu ul:nth-child(2) li a{color: #000;}
 
     main{width: 95%;margin:100px auto;max-width: 1280px;}
     main .new{display: flex;gap: 40px;}
