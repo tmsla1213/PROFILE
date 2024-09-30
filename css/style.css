@@ -12,15 +12,28 @@
     header .txt a{font-size: 16px;color: #fff;border: 1px solid #fff;padding: 15px 25px;border-radius: 5px;}
 
     .mainmenu{width: 1207px;position: absolute;top: 0;left: 0;z-index:999;display: flex;justify-content: center;flex-wrap: nowrap;}
-    .mainmenu ul{flex: 1 1 40%;}
+    .mainmenu ul{flex: 1 1 50%;}
     .mainmenu ul:first-child{background: #FFF;} 
+    .mainmenu ul:first-child li{width: 80%;margin: 20px auto;height: 52px;line-height: 52px;}
     .mainmenu ul:first-child li:first-child{margin-top: 100px;}
     .mainmenu ul:first-child li{font-size: 22px;} 
-    .mainmenu ul:first-child li:hover{background: #ccc;border-radius: 10px;}
+    .mainmenu ul:first-child li:hover{background: rgba(148, 149, 152, 0.18);border-radius: 5px;}
     .mainmenu ul:first-child >li a{width: 100%;color: #000;display: flex;justify-content: space-between;}
+
     .mainmenu ul:nth-child(2){background: #eeeff2;}
-    .mainmenu ul:nth-child(2) li{margin: 0 auto;text-align: center;}
+    .mainmenu ul:nth-child(2) li{margin: 0 auto;}
     .mainmenu ul:nth-child(2) li a{color: #000;}
+    .mainmenu ul:nth-child(2) li{width:352px;border-radius: 10px;margin-bottom: 30px;padding: 20px 0;}
+    .mainmenu ul:nth-child(2) li p:nth-child(2){margin-left: 20px;transition:0.2s;}
+    .mainmenu ul:nth-child(2) li p:nth-child(2){margin-left: 5px;transition:0.3s;}
+    .mainmenu ul:nth-child(2) li a .oil{display: flex;flex-wrap: nowrap;width: 130px;font-size: 13px;border-radius: 3px;text-align: center;font-size: 13px;margin-left: 20px;gap: 1px;}
+    .mainmenu ul:nth-child(2) li a .oil p{background: #fff;width: 67.83px;}
+    .mainmenu ul:nth-child(2) li p:nth-child(1){margin-left: 20px;}
+    .mainmenu ul:nth-child(2) li p:nth-child(3){background: #fff;width: 67.84px;border-radius: 3px;text-align: center;font-size: 13px;margin-left: 20px;}
+
+    .mainmenu ul:nth-child(2) >li:hover a > p:nth-child(2){transform: translateX(20px);}
+    .mainmenu ul:nth-child(2) li:hover p:nth-child(3),.mainmenu ul:nth-child(2) li:hover .oil p{background: #eeeff2;}
+    .mainmenu ul:nth-child(2) li:hover{background: #fff;}
 
     main{width: 95%;margin:100px auto;max-width: 1280px;}
     main .new{display: flex;gap: 40px;}
