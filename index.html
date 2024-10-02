@@ -12,8 +12,8 @@
     <div class="wrap">
 <header>
 <div class="menu">
-    <a href="#"><img src="images/three.svg" alt="menu">메뉴</a>
-    <p>Porsche</p>
+    <a href="#" class="menuclick"><img src="images/three.svg" alt="menu">메뉴</a>
+    <p>PORSCHE</p>
     <a href="#"><img src="images/login.svg" alt="login"></a>
     
 </div>
@@ -21,7 +21,9 @@
      <h1>포르쉐 최초 한<br>국 에디션</h1>
      <a href="#">자세히 알아보기</a>
  </div>
- <div class="mainmenu">
+
+</header>
+<div class="mainmenu">
     <ul>
         <li>
             <a href="#">
@@ -115,7 +117,6 @@
     </ul>
     <p><img src="images/X.svg" alt="X"></p>
  </div>
-</header>
 <main>
     <ul class="new">
     <li>
@@ -210,7 +211,7 @@
         <ul>
             <li>
                 <ul>
-                    <li><img src="images/story1.jpg" alt="story1"></li>
+                    <li class="subvideo1"> <img src="images/subvideo1.webp" alt="story1"></li> 
                     <li>
                         <ul class="story">
                             <li><img src="images/story5.jpg" alt="story5"></li>
@@ -227,7 +228,7 @@
                             <li><img src="images/story3.jpg" alt="story3"></li>
                         </ul>
                     </li>
-                    <li class="y"><img src="images/story7.jpg" alt="story7"></li>
+                    <li class="y"><img src="images/subvideo2.webp" alt="story7"></li>
                 </ul>
             </li>
             <li>
@@ -359,9 +360,32 @@
             </p>
         </div>
     </div>  
-    <h1 class="logo"><img src="images/logo.svg" alt=""></h1>
+    <h1 class="logo"><img src="images/lastlogo.svg" alt="lastlogo"></h1>
    </footer>
- 
+ div.
 </div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+ $(function(){
+    let txt = true;
+    $(".menuclick").click(function(e){
+        e.preventDefault();
+        if(txt){
+          $(".mainmenu").animate({width:"1207px"},500,"linear");  
+        }else{
+            $(".mainmenu").animate({width:"0"},500,"linear",{left :"0"}); 
+        }
+    })
+    $(".mainmenu>p").click(function(){
+        if(txt){
+          $(".mainmenu").animate({width:"1207px"},500,"linear");  
+        }else{
+            $(".mainmenu").animate({width:"0"},500,"linear",{left :"0"}); 
+        }
+        txt =!txt;
+      
+    })
+ });
+</script>
 </body>
 </html>
